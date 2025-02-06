@@ -1,17 +1,8 @@
 services:
   analysis-env:
-    image: rocker/rstudio:4.4.2
-    ports:
-      - 8787:8787
-    volumes:
-      - .:/home/rstudio/work
-    environment:
-      PASSWORD: "password"
-      DISABLE_AUTH: true
-  analysis-env2:
     image: mnvibhakar/ia3
     ports:
-      - 7777:8787
+      - 8787:8787
     volumes:
       - .:/home/rstudio/work
     environment:
